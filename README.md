@@ -2,6 +2,8 @@
 
 用于集中存放和维护 Codex 技能，按业务系统组织。
 
+新增或修改技能前，请查看[维护规则](AGENTS.md)。
+
 ## 目录结构
 
 ```text
@@ -23,12 +25,12 @@ skills/
 
 ## 同步到 GitHub
 
-新增或更新技能后，提交对应目录并推送。
+新增或更新技能后，在维护分支提交对应目录，推送分支并通过 PR 合并。
 
 ```sh
 git add skills/wms/example-skill
 git commit -m "Add WMS example skill"
-git push
+git push -u origin HEAD
 ```
 
 提交前检查技能文件，避免将令牌、密码或个人配置写入仓库。
