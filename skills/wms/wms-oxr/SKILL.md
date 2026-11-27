@@ -1,11 +1,13 @@
 ---
 name: wms-oxr
-description: Use the GME WMS MCP tool wms.oxr to parse a non-sensitive warehouse PDF or document image into Markdown and page-level JSON, or to resume an existing OXR task.
+description: 通过 guthon-develop MCP 调用 GME 的 wms.oxr，解析非敏感仓储 PDF 或图片并获取 Markdown 和分页 JSON，也可查询已有 OXR 任务。
 ---
 
 # 仓储文档解析
 
-调用 GME 的 `wms.oxr`。在 Codex 中按工具说明识别该工具，客户端可能显示为 `wms_oxr`。如果工具未出现在当前连接，重新发现该 MCP 服务的工具列表。
+## MCP 连接
+
+在支持 Skill 和 MCP 的客户端中启用本 Skill，确认 `guthon-develop` 已连接并完成谷神授权。解析仓储文件或查询已有任务时，从该 MCP 的工具列表选择 GME 的 `wms.oxr`。如果找不到工具，先检查 `guthon-develop` 的连接和授权状态。
 
 ## 提交文件
 
