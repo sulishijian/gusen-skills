@@ -1,13 +1,13 @@
 ---
 name: wms-oxr
-description: 在 WorkBuddy 中通过 guthon-develop 连接器调用 GME 的 wms.oxr，解析非敏感仓储 PDF 或图片并获取 Markdown 和分页 JSON，也可查询已有 OXR 任务。
+description: 通过 guthon-develop MCP 调用 GME 的 wms.oxr，解析非敏感仓储 PDF 或图片并获取 Markdown 和分页 JSON，也可查询已有 OXR 任务。
 ---
 
 # 仓储文档解析
 
-## 在 WorkBuddy 中使用
+## MCP 连接
 
-在 WorkBuddy 安装并启用本 Skill，确认 `guthon-develop` 连接器已完成谷神授权，且工具列表中有 `wms.oxr`。用户请求解析仓储文件或查询已有任务时，由 WorkBuddy 通过该连接器调用 GME 的 `wms.oxr`。如果工具尚未加载，请先在 WorkBuddy 检查连接器状态。
+在支持 Skill 和 MCP 的客户端中启用本 Skill，确认 `guthon-develop` 已连接并完成谷神授权。解析仓储文件或查询已有任务时，从该 MCP 的工具列表选择 GME 的 `wms.oxr`。如果找不到工具，先检查 `guthon-develop` 的连接和授权状态。
 
 ## 提交文件
 
